@@ -1,0 +1,243 @@
+/* --- Product Detail Page --- */
+.detail-page {
+  padding-top: 72px;
+  min-height: 100vh;
+}
+
+.detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding: var(--space-8) 0 var(--space-6);
+  transition: color var(--transition-fast);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.detail__back:hover {
+  color: var(--color-gold);
+}
+
+.detail__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  padding-bottom: var(--space-20);
+}
+
+@media (max-width: 860px) {
+  .detail__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}
+
+.detail__image-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.detail__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.detail__category-badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold-dim);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  align-self: flex-start;
+}
+
+.detail__hindi {
+  font-size: var(--text-lg);
+  color: var(--color-gold-dim);
+  letter-spacing: 3px;
+}
+
+.detail__name {
+  font-size: var(--text-4xl);
+  color: var(--color-text-primary);
+  line-height: 1.15;
+}
+
+.detail__price {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.detail__price-note {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  font-weight: 400;
+  margin-left: var(--space-2);
+}
+
+.detail__description {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.detail__divider {
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* --- Fragrance Notes --- */
+.notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.notes-section__title {
+  font-size: var(--text-sm);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+}
+
+.notes-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.note-group {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.note-group__label {
+  font-size: var(--text-sm);
+  color: var(--color-gold);
+  font-weight: 500;
+  min-width: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 2px;
+}
+
+.note-group__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.note-tag {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  background: var(--color-surface);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+/* --- Specs Block --- */
+.specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .specs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.spec-item {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.spec-item__label {
+  font-size: var(--text-xs);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--space-2);
+}
+
+.spec-item__value {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+/* --- Craftsmanship Note --- */
+.craftsmanship {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-6);
+}
+
+.craftsmanship__title {
+  font-size: var(--text-xs);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-3);
+}
+
+.craftsmanship__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* --- Error Page --- */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: var(--space-6);
+  gap: var(--space-6);
+}
+
+.error-page__icon {
+  font-size: 64px;
+  opacity: 0.6;
+}
+
+.error-page__title {
+  font-size: var(--text-3xl);
+  color: var(--color-text-primary);
+}
+
+.error-page__text {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: 480px;
+}

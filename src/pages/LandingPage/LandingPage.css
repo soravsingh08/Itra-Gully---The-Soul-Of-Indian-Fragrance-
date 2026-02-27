@@ -1,0 +1,239 @@
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  overflow: hidden;
+  background-color: #000; 
+}
+
+
+.hero__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image stretch nahi hogi */
+  opacity: 0.6; /* Thoda dark taaki text chamke */
+  filter: brightness(0.7);
+}
+
+/* --- Dark overlay taaki text aur clear dikhe --- */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+  z-index: 2;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 10; 
+  padding: var(--space-6);
+  max-width: 800px;
+}
+
+
+.hero__bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  z-index: 3;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 25% 25%, var(--color-gold) 1px, transparent 1px),
+                    radial-gradient(circle at 75% 75%, var(--color-gold) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero__glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 4;
+}
+
+
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-6);
+  max-width: 800px;
+}
+
+.hero__hindi {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--color-gold-dim);
+  letter-spacing: 6px;
+  margin-bottom: var(--space-6);
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-7xl);
+  font-weight: 700;
+  color: var(--color-gold);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+}
+
+.hero__subtitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
+  letter-spacing: 2px;
+}
+
+.hero__divider {
+  width: 80px;
+  height: 1px;
+  background: var(--color-gold);
+  margin: 0 auto var(--space-10);
+  position: relative;
+}
+
+.hero__divider::before {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-bg);
+  padding: 0 var(--space-3);
+  color: var(--color-gold);
+  font-size: var(--text-xs);
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: var(--text-4xl);
+    letter-spacing: 3px;
+  }
+  .hero__subtitle {
+    font-size: var(--text-lg);
+  }
+  .hero {
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: var(--text-3xl);
+  }
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--color-gold);
+  color: var(--color-bg);
+  border: 1px solid var(--color-gold);
+}
+
+.btn--primary:hover {
+  background: var(--color-gold-light);
+  border-color: var(--color-gold-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.25);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold-dim);
+}
+
+.btn--outline:hover {
+  border-color: var(--color-gold);
+  background: rgba(201, 168, 76, 0.08);
+  transform: translateY(-1px);
+}
+
+.btn--small {
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-xs);
+}
+
+/* --- Brand Intro --- */
+.brand-intro {
+  text-align: center;
+  padding: var(--space-24) 0;
+  background: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand-intro__label {
+  font-size: var(--text-xs);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-gold-dim);
+  margin-bottom: var(--space-6);
+}
+
+.brand-intro__title {
+  font-size: var(--text-3xl);
+  color: var(--color-gold);
+  margin-bottom: var(--space-8);
+}
+
+.brand-intro__text {
+  max-width: 610px;
+  margin: 0 auto;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.brand-intro__text span {
+  color: var(--color-gold-light);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .brand-intro__title {
+    font-size: var(--text-2xl);
+  }
+  .brand-intro__text {
+    font-size: var(--text-base);
+  }
+}

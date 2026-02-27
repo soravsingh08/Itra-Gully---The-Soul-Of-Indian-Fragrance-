@@ -1,0 +1,67 @@
+/* --- CSS Custom Properties --- */
+:root {
+  /* Colors — Max 4 core colors */
+  --color-bg: #0a0a08;
+  --color-bg-elevated: #10100d;
+  --color-bg-card: #1a1a16;
+  --color-bg-hover: #222218;
+  --color-surface: #2a2a24;
+
+  --color-gold: #c9a84c;
+  --color-gold-light: #dfc373;
+  --color-gold-dim: #8a7434;
+
+  --color-text-primary: #f0ece4;
+  --color-text-secondary: #a8a498;
+  --color-text-muted: #6b6860;
+
+  --color-accent: #d4a853;
+  --color-border: #2e2e2839;
+  --color-border-light: #3a3a32;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Spacing Scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Max Width */
+  --max-width: 1280px;
+  --max-width-narrow: 960px;
+}
