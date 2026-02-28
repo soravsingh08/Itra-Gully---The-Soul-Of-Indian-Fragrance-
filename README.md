@@ -1,5 +1,5 @@
 
-# 🏺 Itra Gully — Liquid Royalty
+# 🏺 Itra Gully  | इत्र गली — The Soul of Indian Fragrance
 
 Bringing the 500-year-old heritage of Kannauj’s **Deg-Bhapka** distillation to a premium digital storefront. This project is a high-end perfume showcase built with a focus on luxury aesthetics, typography, and precise spacing.
 
