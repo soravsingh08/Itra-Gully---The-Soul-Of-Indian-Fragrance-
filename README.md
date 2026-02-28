@@ -13,8 +13,6 @@ Bringing the 500-year-old heritage of Kannauj’s **Deg-Bhapka** distillation to
  |<img width="363" height="788" alt="image" src="https://github.com/user-attachments/assets/7420b052-f137-45b3-9d77-fd83f06b5e75" />
 
 
-> *Tip: Bhai, jab tu GitHub pe upload karega, toh apne `public` folder mein ek `screenshots` ka folder bana kar asli images wahan daal dena aur upar wale link badal dena.*
-
 ---
 
 ## 🚀 Live Demo & Quick Start
