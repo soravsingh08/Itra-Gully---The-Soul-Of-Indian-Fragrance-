@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react"; 
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
@@ -5,9 +6,25 @@ import { LandingPage } from "./pages/LandingPage/LandingPage";
 import { ListingPage } from "./pages/ListingPage/ListingPage";
 import { ProductDetailPage } from "./pages/ProductDetailPage/ProductDetailPage";
 import { ScrollToTop } from "./components/ScrollToTop";
-
+import Loader from "./components/Loader/Loader"; 
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+
+    return () => clearTimeout(timer); 
+  }, []);
+
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <HashRouter>
       <ScrollToTop />

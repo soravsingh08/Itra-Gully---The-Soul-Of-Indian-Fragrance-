@@ -8,7 +8,8 @@ export const products = [
     shortDescription: "A deep Mysore rose attar distilled in the old-world hydro method, rich and intoxicating.",
     fullDescription: "Gulab-e-Mysore is our tribute to the legendary rose fields of Karnataka. Each batch is handcrafted using traditional deg-bhapka hydro-distillation, where thousands of fresh Mysore rose petals are slowly coaxed into sandalwood oil over 15 days. The result is a fragrance that carries the warmth of Indian soil — rich, honeyed, and deeply romantic. This is not a synthetic rose. This is the real thing, the way your dadi's generation knew it.",
     category: "attar",
-    image: "public/product-images/gulab-e-mysore.jpg",
+    // FIXED PATH FOR VERCEL
+    image: "/product-images/gulab-e-mysore.jpg",
     fragranceNotes: {
       top: ["Mysore Rose Petals", "Saffron"],
       heart: ["Damask Rose Absolute", "Cardamom"],
@@ -28,7 +29,7 @@ export const products = [
     shortDescription: "Night-blooming jasmine captured at peak bloom — heady, sultry, unforgettable.",
     fullDescription: "Named after the intoxicating night-blooming cestrum, Raat Ki Rani is a fragrance that comes alive after sunset. We harvest parijaat and raat ki rani flowers between 2 AM and 4 AM when their scent is most potent. The attar is a liquid ode to warm Indian nights — the kind where the air itself feels perfumed. Wear it and you carry the galli's best-kept secret on your skin.",
     category: "attar",
-    image: "public/product-images/raat-ki-rani.png",
+    image: "/product-images/raat-ki-rani.png",
     fragranceNotes: {
       top: ["Night Jasmine", "Tuberose"],
       heart: ["Parijaat", "Ylang Ylang", "White Lotus"],
@@ -48,7 +49,7 @@ export const products = [
     shortDescription: "The smell of first rain on dry earth — bottled. Pure petrichor from Kannauj.",
     fullDescription: "There is no fragrance more Indian than the smell of rain hitting parched earth. Mitti Attar captures exactly that — the petrichor, the nostalgia, the relief of monsoon's first drops on sun-baked clay. Made by distilling baked earthen discs (from the banks of the Ganga) into sandalwood oil, this is Kannauj's most iconic creation. One drop and you're standing in a village courtyard, chai in hand, watching the sky open up.",
     category: "ittar",
-    image: "public/product-images/mitti-attar.png",
+    image: "/product-images/mitti-attar.png",
     fragranceNotes: {
       top: ["Petrichor", "Wet Earth"],
       heart: ["Baked Clay", "Geosmin"],
@@ -68,7 +69,7 @@ export const products = [
     shortDescription: "Assam agarwood aged 20 years, distilled into liquid royalty. For those who command a room.",
     fullDescription: "Shah Jahan Oud is not a fragrance — it is a statement. Sourced from 20-year-old agarwood trees in the dense forests of Assam, this oud is distilled slowly over 72 hours, yielding a dark, resinous oil of extraordinary depth. It opens with a smoky, almost medicinal sharpness that mellows into a creamy, animalic warmth. This was the scent of Mughal courts, of power whispered through incense smoke. One application lasts an entire day.",
     category: "attar",
-    image: "public/product-images/shahajahan-oud.png",
+    image: "/product-images/shahajahan-oud.png",
     fragranceNotes: {
       top: ["Assam Agarwood", "Smoky Birch"],
       heart: ["Aged Oud", "Leather", "Saffron"],
@@ -88,7 +89,7 @@ export const products = [
     shortDescription: "Pure Madurai jasmine sambac — the flower that defines Indian summer evenings.",
     fullDescription: "Chameli Ka Phool is the essence of Madurai's jasmine garland market at dawn. We source Jasminum sambac from small family farms in Tamil Nadu, where the flowers are hand-picked before sunrise and immediately sent for enfleurage extraction. The result is a jasmine that smells alive — green, dewy, indolic, with that unmistakable sweetness that clings to your hair and clothes. This is the fragrance South Indian women have worn for centuries, and for good reason.",
     category: "attar",
-    image: "public/product-images/chameli.png",
+    image: "/product-images/chameli.png",
     fragranceNotes: {
       top: ["Jasmine Sambac", "Green Stems"],
       heart: ["Mogra", "Orange Blossom", "Jasmine Absolute"],
@@ -108,7 +109,7 @@ export const products = [
     shortDescription: "A complex blend of henna flowers and warm amber — earthy, sweet, deeply Indian.",
     fullDescription: "Hina is perhaps the most misunderstood attar in the Indian perfumer's palette. It is not a single-note fragrance but a complex compound attar, blending the green-earthy scent of henna flowers with warm amber, spices, and musk. Our Hina Amber pays homage to the old Lucknowi tradition — where nawabs would commission personal hina blends as a mark of taste. Wear it and you carry centuries of refinement on your pulse points.",
     category: "ittar",
-    image: "public/product-images/heena.png",
+    image: "/product-images/heena.png",
     fragranceNotes: {
       top: ["Henna Flower", "Bergamot", "Coriander"],
       heart: ["Amber", "Cinnamon Bark", "Clove Bud"],
@@ -128,7 +129,7 @@ export const products = [
     shortDescription: "Kashmiri saffron meets Mysore sandalwood — warm, golden, sacred.",
     fullDescription: "Kesar Chandan is the fragrance of Indian temples, of tilak ceremonies, of sacred mornings. We combine the world's finest Kashmiri kesar (saffron) with old-growth Mysore sandalwood to create an attar that feels like liquid gold on skin. The saffron lends a honeyed, slightly metallic warmth, while the sandalwood provides a creamy, meditative base. It's the scent equivalent of a warm shawl — comforting, luxurious, unmistakably Indian.",
     category: "attar",
-    image: "public/product-images/kesar chandan.png",
+    image: "/product-images/kesar chandan.png",
     fragranceNotes: {
       top: ["Kashmiri Saffron", "Cardamom"],
       heart: ["Sandalwood Cream", "Turmeric Flower", "Milk"],
@@ -148,7 +149,7 @@ export const products = [
     shortDescription: "Smoked frankincense and benzoin resin — the scent of old bazaars and dargahs.",
     fullDescription: "Loban Nights is for those who find beauty in smoke. Inspired by the dargahs and old bazaars of Ajmer and Hyderabad, this attar captures the hypnotic scent of burning loban (frankincense) mixed with benzoin resin. It's meditative, slightly sweet, and deeply grounding. The smoke note is authentic — we actually pass the oil through loban fumes during the aging process. This is the India that smells like prayer and history.",
     category: "ittar",
-    image: "public/product-images/urban night.png",
+    image: "/product-images/urban night.png",
     fragranceNotes: {
       top: ["Frankincense Smoke", "Black Pepper"],
       heart: ["Benzoin Resin", "Myrrh", "Guggul"],
@@ -168,7 +169,7 @@ export const products = [
     shortDescription: "Wild vetiver roots from Rajasthan — cooling, green, and deeply grounding.",
     fullDescription: "Khas (vetiver) is India's answer to air conditioning — a cooling, earthy root that has been used for centuries in curtains, fans, and fragrances. Our Khas Attar is distilled from wild vetiver roots harvested in Rajasthan's Bhilwara district. The fragrance is green, smoky, slightly sweet, and incredibly calming. In the scorching Indian summer, a touch of khas on the wrists feels like a breeze through a wet khus curtain. Simple, honest, essential.",
     category: "essential",
-    image: "public/product-images/vitivar-roots.png",
+    image: "/product-images/vitivar-roots.png",
     fragranceNotes: {
       top: ["Fresh Vetiver", "Lemongrass"],
       heart: ["Vetiver Root", "Green Grass", "Cucumber"],
@@ -188,7 +189,7 @@ export const products = [
     shortDescription: "The legendary 40-ingredient Kannauj masterpiece — India's most complex attar.",
     fullDescription: "Shamama is the magnum opus of Indian perfumery. A compound attar containing over 40 natural ingredients — flowers, herbs, spices, resins, and woods — all distilled together in a single deg over several days. No two batches are identical. The fragrance is impossible to deconstruct: warm, spicy, floral, woody, resinous, all at once. It is said that a true shamama takes a master perfumer an entire lifetime to perfect. Ours is made by Ustad Munir Ahmed, a 5th-generation attar-saz from Kannauj.",
     category: "attar",
-    image: "public/product-images/shamama.png",
+    image: "/product-images/shamama.png",
     fragranceNotes: {
       top: ["Saffron", "Rose", "Marigold", "Kewra"],
       heart: ["40+ Botanicals", "Spice Blend", "Hina"],
