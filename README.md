@@ -7,11 +7,11 @@ Bringing the 500-year-old heritage of Kannauj’s **Deg-Bhapka** distillation to
 
 ## 📸 Visual Showcase (Screenshots)
 
-| **Desktop Landing Page** | **Mobile Product View** |
+
 | <img width="1908" height="899" alt="image" src="https://github.com/user-attachments/assets/f9487449-4a2c-49a0-83ac-06ee51e17def" />
  | <img width="362" height="793" alt="image" src="https://github.com/user-attachments/assets/ca91c058-1fd2-4754-93ba-a8187d0f2895" />
- |
-|  |  |
+ |<img width="363" height="788" alt="image" src="https://github.com/user-attachments/assets/7420b052-f137-45b3-9d77-fd83f06b5e75" />
+
 
 > *Tip: Bhai, jab tu GitHub pe upload karega, toh apne `public` folder mein ek `screenshots` ka folder bana kar asli images wahan daal dena aur upar wale link badal dena.*
 
