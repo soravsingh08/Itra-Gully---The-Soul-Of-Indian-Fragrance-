@@ -1,17 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Footer.css"
 
-/**
- * ==========================================
- * EXPLANATION COMMENTS (Delete this block later)
- * ==========================================
- * 1. Ye ek pure Functional Component hai (JSX).
- * 2. BEM naming convention (footer__inner, footer__link) ko same rakha hai.
- * 3. Link component react-router-dom se liya hai taaki page refresh na ho.
- * 4. Luxury brand feel ke liye Hindi text aur detailed brand intro dala hai.
- * 5. Layout: Desktop pe columns dikhenge, mobile pe stack honge (CSS handle karega).
- * ==========================================
- */
+
 
 export function Footer() {
   return (
@@ -47,7 +37,7 @@ export function Footer() {
           <div>
             <h4 className="footer__heading">The Craft</h4>
             <ul className="footer__link-list">
-              {/* Inpe Link nahi lagaya hai kyunki ye sirf brand depth dikhane ke liye hain */}
+              {/* No links for this becaucse this are just for brand depth */}
               <li><span className="footer__link">Deg-Bhapka Process</span></li>
               <li><span className="footer__link">Our Artisans</span></li>
               <li><span className="footer__link">Kannauj Heritage</span></li>
@@ -63,7 +53,7 @@ export function Footer() {
             © 2025 Itra Gully. All rights reserved.
           </span>
           <span className="footer__made-with">
-            {/* Diamond icon (♦) use kiya hai jo premium lagta hai */}
+          
             Crafted with <span>♦</span> in Kannauj & Mumbai
           </span>
         </div>

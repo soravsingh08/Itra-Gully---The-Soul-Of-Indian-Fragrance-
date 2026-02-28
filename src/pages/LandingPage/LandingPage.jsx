@@ -3,21 +3,9 @@ import { getFeaturedProducts } from "../../data/products";
 import { FeaturedCard } from "../../components/FeaturedCard/FeaturedCard";
 import "./LandingPage.css"
 
-/**
- * ==========================================
- * EXPLANATION COMMENTS (Delete this block later)
- * ==========================================
- * 1. TypeScript ki interfaces aur types poori tarah hata di hain.
- * 2. 'featured' variable mein humne data fetch kiya hai simple function se.
- * 3. map() function ka use kiya hai featured products dikhane ke liye.
- * 4. key={product.id} zaroori hai React ke liye, isliye usko rakha hai.
- * 5. BEM class naming (hero__title, brand-intro__text) ko bilkul nahi cheda.
- * 6. Brand Intro text ko "luxury" aur "specific" rakha hai jaisa assignment mein maanga tha.
- * ==========================================
- */
+
 
 export function LandingPage() {
-  // Products data se sirf 'featured' wale items nikal rahe hain
   const featured = getFeaturedProducts();
 
   return (
@@ -30,13 +18,13 @@ export function LandingPage() {
             alt="Traditional Indian Perfume Cnollection"
             className="hero__image"
           />
-          {/* Dark overlay taaki text white/gold mein chamke */}
+      
           <div className="hero__overlay" />
         </div>
         <div className="hero__bg-pattern" />
         <div className="hero__glow" />
         <div className="hero__content">
-          {/* Hindi text for premium Indian look */}
+          
           <p className="hero__hindi animate-in animate-in--delay-1">इत्र गली</p>
           <h1 className="hero__title animate-in animate-in--delay-2">Itra Gully</h1>
           <p className="hero__subtitle animate-in animate-in--delay-3">
@@ -76,7 +64,7 @@ export function LandingPage() {
             </h2>
           </div>
           <div className="featured__grid">
-            {/* Array par loop chala kar FeaturedCards dikha rahe hain */}
+            
             {featured.map(function (product) {
               return <FeaturedCard key={product.id} product={product} />;
             })}

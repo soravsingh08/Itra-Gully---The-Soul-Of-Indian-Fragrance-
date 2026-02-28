@@ -1,5 +1,5 @@
 
-/* --- Reset & Base --- */
+
 *,
 *::before,
 *::after {
@@ -79,4 +79,22 @@ h1, h2, h3, h4, h5, h6 {
 .hindi-text {
   font-style: normal;
   color: var(--color-gold);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 2px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 0px; 
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6a6a6a4b transparent;
 }

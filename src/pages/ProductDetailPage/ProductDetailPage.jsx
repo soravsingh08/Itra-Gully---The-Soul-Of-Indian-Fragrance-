@@ -2,28 +2,16 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { getProductById } from "../../data/products";
 import "./ProductDetailPage.css"
 
-/**
- * ==========================================
- * EXPLANATION COMMENTS (Delete this block later)
- * ==========================================
- * 1. TypeScript ki saari types (: string, : string[], etc.) hata di hain.
- * 2. useNavigate hook se 'Back' button ka logic handle kiya hai.
- * 3. Graceful Error: Agar product ID galat hai, toh 'Fragrance Not Found' wala div return hoga.
- * 4. Specs Block: Perfume ke liye notes, size, aur longevity ko alag sections mein dikhaya hai.
- * 5. Helpers: NoteGroup aur SpecItem functions ko niche simple rakha hai taaki code repeat na ho.
- * 6. formatPrice ki jagah seedha ₹ symbol use kiya hai beginner style mein.
- * ==========================================
- */
 
 export function ProductDetailPage() {
-  // URL se ID nikal rahe hain
+
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Data fetch kar rahe hain
+
   const product = id ? getProductById(id) : undefined;
 
-  // AGAR PRODUCT NAHI MILA (Graceful Error Handling)
+
   if (!product) {
     return (
       <div className="error-page">
@@ -40,7 +28,7 @@ export function ProductDetailPage() {
     );
   }
 
-  // Data ko use karne ke liye nikalna
+
   const fragranceNotes = product.fragranceNotes;
 
   return (
