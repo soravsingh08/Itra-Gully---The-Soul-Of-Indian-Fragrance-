@@ -26,8 +26,8 @@ export function LandingPage() {
       <section className="hero">
         <div className="hero__image-container">
           <img
-            src="public/hero.png"
-            alt="Traditional Indian Perfume Collection"
+            src="/hero.png"
+            alt="Traditional Indian Perfume Cnollection"
             className="hero__image"
           />
           {/* Dark overlay taaki text white/gold mein chamke */}
